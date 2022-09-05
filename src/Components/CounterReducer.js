@@ -1,4 +1,5 @@
 import { increment, decrement } from './Action';
+
 const initialState = {
     counter: 0,
 };

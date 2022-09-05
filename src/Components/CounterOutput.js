@@ -4,5 +4,7 @@ import { useSelector } from 'react-redux';
 export default function CounterOutput() {
     const counter = useSelector((state) => state.counter);
 
-    return <>Counter Value: {counter}</>;
+    return <>
+        <h2>Counter Value: {counter}</h2>
+    </>;
 }
