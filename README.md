@@ -1,1 +1,1 @@
-# React Redux & UseMemo Hooks!
+# React Redux!
