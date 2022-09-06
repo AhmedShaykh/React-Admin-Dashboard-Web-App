@@ -1,5 +1,6 @@
 export const increment = 'INCREMENT';
 export const decrement = 'DECREMENT';
+export const reset = 'RESET';
 
 export const incrementAction = () => ({
     type: increment,
@@ -9,4 +10,8 @@ export const incrementAction = () => ({
 export const decrementAction = () => ({
     type: decrement,
     // payload: { value: 5 }
+});
+
+export const resetAction = () => ({
+    type: reset,
 });
