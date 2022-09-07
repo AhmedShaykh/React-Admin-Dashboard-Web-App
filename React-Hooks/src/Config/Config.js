@@ -1,0 +1,1 @@
+export const apiRequest = "https://api.github.com/";

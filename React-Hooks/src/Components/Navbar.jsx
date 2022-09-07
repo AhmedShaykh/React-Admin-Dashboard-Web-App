@@ -9,7 +9,7 @@ const Navbar = () => {
     const handleClick = () => setClick(!click);
 
     return (
-        <div className='navbar'>
+        <div className={click ? "navbar navbar-bg" : "navbar"}>
             <div className='logo'>
                 <img src={Logo} alt='logo' />
             </div>
