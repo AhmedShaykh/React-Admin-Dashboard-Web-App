@@ -1,12 +1,14 @@
+import React from 'react';
 import './App.css';
+import Hero from './Components/Hero';
+import Navbar from './Components/Navbar';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <h1>React</h1>
-      </header>
-    </div>
+    <>
+      <Navbar />
+      <Hero />
+    </>
   );
 }
 
