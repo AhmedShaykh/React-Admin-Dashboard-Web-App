@@ -18,15 +18,17 @@ const Memo = () => {
   }, [])
 
   return (
-    <div>
+    <div className='data'>
       <h1>
-        {usersRepos?.map((items) => {
-          return (
-            <li key={items?.id}>
-              {items?.name}
-            </li>
-          )
-        })}
+        <ol>
+          {usersRepos?.map((items) => {
+            return (
+              <li key={items?.id}>
+                {items?.name}
+              </li>
+            )
+          })}
+        </ol>
       </h1>
     </div>
   )

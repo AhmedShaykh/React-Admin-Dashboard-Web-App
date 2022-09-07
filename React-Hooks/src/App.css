@@ -223,3 +223,29 @@ button:hover {
         display: none;
     }
 }
+
+.data {
+    padding: 5rem 0;
+    padding-left: 15rem;
+    background-color: #282c34;
+    color: azure;
+}
+
+.data li {
+    padding: 2rem;
+}
+
+.hooks {
+    padding: 5rem 0;
+    background-color: #1d1f25;
+    color: azure;
+    text-align: center;
+    font-size: 3rem;
+}
+
+.hooks button {
+    width: 30%;
+    height: 60px;
+    margin: 3rem;
+    font-size: 2rem !important;
+} 
