@@ -247,5 +247,19 @@ button:hover {
     width: 30%;
     height: 60px;
     margin: 3rem;
-    font-size: 2rem !important;
-} 
+    font-size: 2rem;
+    background: var(--darkgrey);
+}
+
+.hooks input {
+    width: 50%;
+    height: 60px;
+    margin: 3rem 0;
+    font-size: 1.6rem;
+    background-color: rgb(45, 38, 38);
+    color: white;
+}
+
+.hooks .input {
+    margin-bottom: -2rem;
+}

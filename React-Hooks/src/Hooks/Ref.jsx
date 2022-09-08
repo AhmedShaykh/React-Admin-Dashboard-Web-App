@@ -1,30 +1,34 @@
-import React, { useState, useRef, useMemo } from 'react'
+import React, { useState, useEffect, useRef } from 'react';
+import Hooks from './Hooks';
 
 const Ref = () => {
 
-  const [myNum, setMyNum] = useState(0);
-  const [show, setShow] = useState(false);
+  const [myData, setMyData] = useState("");
 
-  const getValue = () => {
-    return setMyNum(myNum + 1);
+  const count = useRef(0);
+  const inputElem = useRef("");
+
+  useEffect(() => {
+    count.current = count.current + 1;
+  })
+
+  const changeStyle = () => {
+    console.log(`Change Data ` + inputElem);
   }
-
-  const countNumber = (num) => {
-    console.log(`Testing Data`, num)
-    return num;
-  }
-
-  const checkData = countNumber(myNum);
 
   return (
     <div className='hooks'>
-      <button onClick={getValue} style={{ backgroundColor: "red" }}>
-        Counter
-      </button>
-      <p>My New Number : {checkData}</p>
-      <button onClick={() => setShow(!show)}>
-        {!show ? "You Clicked me" : "Click me plz"}
-      </button>
+      <h1 style={{ marginTop: "3rem" }}>UseRef</h1>
+      <div className="input">
+        <input ref={inputElem}
+          type="text"
+          value={myData}
+          onChange={(e) => setMyData(e.target.value)} />
+        <p> The Number of times Render: {count.current}</p>
+        <button style={{ paddingTop: "0.5rem", width: "20%" }}
+          onClick={changeStyle}>Submit</button>
+      </div>
+      <Hooks />
     </div>
   )
 }
