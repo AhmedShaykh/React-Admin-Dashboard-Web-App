@@ -9,17 +9,17 @@ export default function CounterReducer(state = initialState, action) {
         case increment:
             return {
                 ...state,
-                counter: state.counter + 1
+                counter: state.counter + 1,
                 // counter: state.counter + action.payload.value
             };
         case decrement:
             return {
                 ...state,
-                counter: state.counter - 1
+                counter: state.counter - 1,
                 // counter: state.counter - action.payload.value
             };
-            case reset:
-                return { ...initialState };
+        case reset:
+            return { ...initialState };
         default:
             return state;
     }
