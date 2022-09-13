@@ -14,7 +14,7 @@ const Memo = () => {
   }
 
   useEffect(() => {
-    getUserRepo('AhmedShaykh')
+    getUserRepo('SyedMuhammedBilal');
   }, [])
 
   return (
